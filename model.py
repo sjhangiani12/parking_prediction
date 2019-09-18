@@ -17,7 +17,7 @@ FUTURE_PERIOD_PREDICT = 1
 GARAGE_TO_PREDICT = "SALLING"
 EPOCHS = 10
 BATCH_SIZE = 64
-NAME = f"{SEQ_LENGTH}--SEQ--{FUTURE_PERIOD_PREDICT}--PRED-{int(time.time())}"
+NAME = f"{SEQ_LENGTH}-SEQ-{FUTURE_PERIOD_PREDICT}-PRED-{int(time.time())}.h5"
 
 
 df = pd.read_csv("data/cleaned_df.csv")
@@ -127,7 +127,6 @@ model.compile(
     optimizer=opt,
     metrics=['accuracy']
 )
-
 tensorboard = TensorBoard(log_dir="logs/{}".format(NAME))
 
 # unique file name that will include the epoch and the validation acc for that epoch
@@ -150,3 +149,4 @@ print('Test loss:', score[0])
 print('Test accuracy:', score[1])
 # Save model
 model.save("models/{}".format(NAME))
+print("Saved model to disk")
