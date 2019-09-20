@@ -10,13 +10,13 @@ The data used in this model was sourced from Open Data DK, which can be found [h
 
 ### Model:
 
-#### Architecure:
+##### Architecure:
 The underlying architecture of the model is a sequential Recurrent Neural Network with _LSTM_, _Batch Normalization_, and _Dense_ layers using a _Rectified Linear_ and _Soft Max_ activation parameters and a _Sparse Categorical Crossentropy_ loss function.
 
-#### Model Training:
+##### Model Training:
 The most updated model was trained with a Batch Size of 64 with 10 Epochs. The model is saved as an `.h5` file under the `/models` folder. 
 
-#### Model Accuracy: 
+##### Model Accuracy: 
 The model was tested on _~51,000_ entries of unseen data and was able to predict increase/decrease at a __79.21%__ accuracy. 
 
 ### Enviroment setup:
@@ -24,6 +24,6 @@ The model was tested on _~51,000_ entries of unseen data and was able to predict
 Install dependencies with:
 ```pip install -r requirements.txt``` On a Mac, ensure that xcode is installed. Install Python 3 from [here](https://www.anaconda.com/distribution/).
 
-### Questions:
+#### Administrative:
 
 All questions can go to `sharan@uw.edu`. _This model was primarily possible because of [this amazing tutorial](https://www.youtube.com/watch?v=yWkpRdpOiPY)_
