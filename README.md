@@ -17,7 +17,7 @@ The underlying architecture of the model is a sequential Recurrent Neural Networ
 The most updated model was trained with a Batch Size of 64 with 10 Epochs. The model is saved as an `.h5` file under the `/models` folder. 
 
 #### Model Accuracy: 
-The model was tested on _~51,000_ entries of unseen data and was able to predict increase/decrease at a __78.78%__ accuracy. 
+The model was tested on _~51,000_ entries of unseen data and was able to predict increase/decrease at a __79.21%__ accuracy. 
 
 #### Enviroment setup:
 
