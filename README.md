@@ -19,9 +19,11 @@ The most updated model was trained with a Batch Size of 64 with 10 Epochs. The m
 #### Model Accuracy: 
 The model was tested on _~51,000_ entries of unseen data and was able to predict increase/decrease at a __79.21%__ accuracy. 
 
-#### Enviroment setup:
+### Enviroment setup:
 
 Install dependencies with:
 ```pip install -r requirements.txt``` On a Mac, ensure that xcode is installed. Install Python 3 from [here](https://www.anaconda.com/distribution/).
+
+### Questions:
 
 All questions can go to `sharan@uw.edu`. _This model was primarily possible because of [this amazing tutorial](https://www.youtube.com/watch?v=yWkpRdpOiPY)_
